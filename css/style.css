@@ -54,7 +54,7 @@ body {
   overflow: hidden;
 }
 
-.container .card .box::before {
+.container .card:nth-child(1) .box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -65,7 +65,7 @@ body {
   pointer-events: none;
 }
 
-/* .container .card:nth-child(3) .box::before {
+.container .card:nth-child(3) .box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -74,7 +74,7 @@ body {
   height: 100%;
   background: rgba(255, 255, 255, 0.05);
   pointer-events: none;
-} */
+}
 
 .container .card .box:hover {
   transform: translateY(-50px);
@@ -132,4 +132,18 @@ body {
 
 .container .card:nth-child(3) .box .content a {
   background: #97dc47;
+}
+
+.Study {
+  font-size: 5em;
+  font-weight: 900;
+  font-display: block;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); */
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2),
+    -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
 }
